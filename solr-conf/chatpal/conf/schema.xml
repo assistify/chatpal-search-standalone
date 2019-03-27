@@ -10,6 +10,7 @@
   <field name="type" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
 
   <field name="rid" type="string"   indexed="true" stored="true" multiValued="false"/>
+  <field name="mid" type="string"   indexed="true" stored="true" multiValued="false"/>
   <field name="user" type="string"   indexed="true" stored="true" multiValued="false"/>
   <!-- TODO extend to username -->
   <field name="created" type="tdate" indexed="true" stored="true" multiValued="false"/>

@@ -389,7 +389,7 @@
         <lst name="defaults">
             <str name="defType">edismax</str>
             <str name="df">context</str>
-            <str name="fl">_id:id,type,rid,user,created,text,score,user_username,user_name,user_email,room_name,room_topic,room_description,room_announcement</str>
+            <str name="fl">_id:id,type,rid,mid,user,created,updated,text,score,user_username,user_name,user_email,room_name,room_topic,room_description,room_announcement,file_name,file_desc,file_type,file_link,file_store,file_size</str>
 
             <str name="wt">json</str>
             <str name="json.nl">map</str>
@@ -415,6 +415,11 @@
         <lst name="room">
             <str name="hl.fl">room_*</str>
             <str name="qf">room_name^3 room_topic^2 room_description room_announcement</str>
+            <str name="df">context</str>
+        </lst>
+        <lst name="file">
+            <str name="hl.fl">file_name file_desc</str>
+            <str name="qf">file_name^3 file_desc^2 file_type file_store</str>
             <str name="df">context</str>
         </lst>
     </requestHandler>
